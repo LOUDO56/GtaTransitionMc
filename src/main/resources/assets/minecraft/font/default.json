@@ -1,0 +1,32 @@
+{
+  "providers": [
+    {
+      "type": "bitmap",
+      "file": "cameratester:gui/steve.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": ["\uE000"]
+    },
+    {
+      "type": "bitmap",
+      "file": "cameratester:gui/alex.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": ["\uE001"]
+    },
+    {
+      "type": "bitmap",
+      "file": "cameratester:gui/herobrine.png",
+      "ascent": 12,
+      "height": 16,
+      "chars": ["\uE002"]
+    },
+    {
+      "type": "bitmap",
+      "file": "cameratester:transition/white.png",
+      "ascent": 128,
+      "height": 1920,
+      "chars": ["\uE003"]
+    }
+  ]
+}

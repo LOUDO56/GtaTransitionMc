@@ -1,0 +1,38 @@
+{
+  "boom": {
+    "subtitle": "sounds.cameratester.boom",
+    "sounds": [
+      "cameratester:boom"
+    ]
+  },
+  "whoosh": {
+    "subtitle": "sounds.cameratester.whoosh",
+    "sounds": [
+      "cameratester:whoosh"
+    ]
+  },
+  "tam": {
+    "subtitle": "sounds.cameratester.tam",
+    "sounds": [
+      "cameratester:tam"
+    ]
+  },
+  "choosing": {
+    "subtitle": "sounds.cameratester.choosing",
+    "sounds": [
+      "cameratester:choosing"
+    ]
+  },
+  "select": {
+    "subtitle": "sounds.cameratester.select",
+    "sounds": [
+      "cameratester:select"
+    ]
+  },
+  "going_up": {
+    "subtitle": "sounds.cameratester.going_up",
+    "sounds": [
+      "cameratester:going_up"
+    ]
+  }
+}

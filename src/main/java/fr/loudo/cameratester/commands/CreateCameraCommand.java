@@ -41,9 +41,9 @@ public class CreateCameraCommand {
                 player.getPos(),
                 positionSwap,
                 player,
-                0.010
+                moveEveryCord
         );
-        animation.start();
+        animation.start(null);
 
         return Command.SINGLE_SUCCESS;
     }
