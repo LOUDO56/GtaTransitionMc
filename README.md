@@ -7,5 +7,7 @@ made to learn about Camera and stuff
 
 
 
-https://github.com/user-attachments/assets/f30d7986-1eef-4fdd-ad23-f01abe5e161e
+
+
+https://github.com/user-attachments/assets/2e5523b1-e413-4c5f-b56e-df4b5e566030
 
