@@ -98,15 +98,13 @@ public class GtaCharacterChange {
     }
 
     private void addPlayersToScoreboard() {
-        Scoreboard scoreboard = player.getScoreboard();
-        Team team = scoreboard.getTeam("notag");
-        if (team == null) {
-            team = scoreboard.addTeam("notag");
-            team.setNameTagVisibilityRule(AbstractTeam.VisibilityRule.NEVER);
-        }
+        Scoreboard scoreboard = new Scoreboard();
+        Team team = new Team(scoreboard, "notag");
+        team.setNameTagVisibilityRule(AbstractTeam.VisibilityRule.NEVER);
         team.getPlayerList().add(player.getDisplayName().getString());
         team.getPlayerList().add(clonePlayerFirstLoc.getDisplayName().getString());
         team.getPlayerList().add(clonePlayerSecondLoc.getDisplayName().getString());
+        player.networkHandler.send(TeamS2CPacket.updateTeam(team, true), null);
     }
 
     private void spawnFakePlayers(String playerName) {
