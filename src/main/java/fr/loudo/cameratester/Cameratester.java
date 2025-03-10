@@ -1,18 +1,13 @@
 package fr.loudo.cameratester;
 
-import fr.loudo.cameratester.commands.CreateCameraCommand;
-import fr.loudo.cameratester.commands.OpenCustomScreen;
 import fr.loudo.cameratester.keys.ModKeys;
 import fr.loudo.cameratester.screens.GtaSwapScreen;
 import fr.loudo.cameratester.sound.ModSounds;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.network.packet.s2c.play.StopSoundS2CPacket;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.sound.SoundCategory;
-import net.minecraft.text.Text;
 
 public class Cameratester implements ModInitializer {
 
@@ -21,10 +16,6 @@ public class Cameratester implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        CommandRegistrationCallback.EVENT.register((dispatcher, registryAccess, environment) -> {
-            CreateCameraCommand.register(dispatcher);
-            OpenCustomScreen.register(dispatcher);
-        });
 
         ModKeys.registerKeys();
         ModSounds.registerSounds();

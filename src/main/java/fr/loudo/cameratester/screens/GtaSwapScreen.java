@@ -34,13 +34,13 @@ public class GtaSwapScreen extends Screen {
     }
 
     private Vec3d getRandomLocation(Vec3d startPos) {
-        int randomX = getRandomNumber(-800, 800);
-        int randomZ = getRandomNumber(-800, 800);
+        int randomX = getRandomNumber(-300, 300);
+        int randomZ = getRandomNumber(-300, 300);
         while(randomX > -20 && randomX < 20) {
-            randomX = getRandomNumber(-800, 800);
+            randomX = getRandomNumber(-300, 300);
         }
         while(randomZ > -20 && randomZ < 20) {
-            randomZ = getRandomNumber(-800, 800);
+            randomZ = getRandomNumber(-300, 300);
         }
         int x = (int) startPos.getX() + randomX;
         int y = (int) startPos.getY();
